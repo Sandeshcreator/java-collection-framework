@@ -1,4 +1,4 @@
-package com.learning.collectionframework.linkedlist;
+package com.learning.collectionframework;
 
 import java.util.Vector;
 
