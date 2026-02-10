@@ -3,7 +3,7 @@ package com.learning.collectionframework.arraylist;
 import java.util.ArrayList;
 import java.util.List;
 
-class Student {
+class Student implements Comparable<Student> {
     private String name;
 
     private double gpa;
@@ -19,6 +19,19 @@ class Student {
 
     public double getGpa() {
         return gpa;
+    }
+
+    @Override
+    public int compareTo(Student student) {
+        return Double.compare(student.getGpa(), this.getGpa());
+    }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+               "name='" + name + '\'' +
+               ", gpa=" + gpa +
+               '}';
     }
 }
 
